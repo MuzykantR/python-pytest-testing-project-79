@@ -12,8 +12,9 @@ jobs:
           echo "$HOME/.cargo/bin" >> $GITHUB_PATH
       
       - name: Install dependencies
+        working-directory: ./hexlet-code
         run: uv sync
       
       - name: Run tests
-        run: uv run pytest
-
+        working-directory: ./hexlet-code
+        run: uv run pytest -v
