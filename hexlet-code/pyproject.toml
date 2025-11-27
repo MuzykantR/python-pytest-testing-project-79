@@ -17,5 +17,11 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["page_loader"]
 
+[dependency-groups]
+dev = [
+    "pytest>=9.0.1",
+    "requests-mock>=1.12.1",
+]
+
 [project.scripts]
-page-loader = "hexlet-code.scripts.main:main"
+page-loader = "page_loader.scripts.main:main"
