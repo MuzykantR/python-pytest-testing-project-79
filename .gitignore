@@ -1,0 +1,19 @@
+# Venv
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Packages
+dist/
+*.egg-info/
+
+# Tests
+.pytest_cache/
+.coverage
+
+# IDE
+.vscode/
+.idea/
